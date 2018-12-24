@@ -1,0 +1,15 @@
+[package]
+name = "nvptxglue-example"
+version = "0.0.0"
+edition = "2018"
+
+[workspace]
+members = ["kernels"]
+#default-members = []
+
+[lib]
+name = "nvptxglue_example"
+path = "lib.rs"
+
+[build-dependencies]
+nvptxglue = { path = "../nvptxglue" }
