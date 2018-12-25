@@ -8,7 +8,10 @@ edition = "2018"
 
 [lib]
 name = "nvptxglue_example"
-path = "lib.rs"
+path = "src/lib.rs"
 
 [build-dependencies]
 nvptxglue = { path = "../nvptxglue" }
+
+[dependencies]
+lazy_static = "*"

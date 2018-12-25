@@ -6,7 +6,7 @@
 use core::arch::nvptx::*;
 
 #[no_mangle]
-pub unsafe extern "ptx-kernel" fn hello_kernel(x: *mut u32) {
+pub unsafe extern "ptx-kernel" fn hello_kernel(x: *mut u32, n: i32) {
   let idx = _thread_idx_x() as isize;
   match idx {
     0 => {
