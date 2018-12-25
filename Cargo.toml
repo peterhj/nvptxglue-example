@@ -3,9 +3,8 @@ name = "nvptxglue-example"
 version = "0.0.0"
 edition = "2018"
 
-[workspace]
-members = ["kernels"]
-#default-members = []
+#[workspace]
+#members = ["kernels"]
 
 [lib]
 name = "nvptxglue_example"
