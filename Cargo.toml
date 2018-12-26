@@ -2,6 +2,7 @@
 name = "nvptxglue-example"
 version = "0.0.0"
 edition = "2018"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
 
 #[workspace]
 #members = ["kernels"]
@@ -14,4 +15,6 @@ path = "src/lib.rs"
 nvptxglue = { path = "../nvptxglue" }
 
 [dependencies]
+cuda-ffi-types = { git = "https://github.com/peterhj/cuda-ffi-types" }
+cuda = { git = "https://github.com/peterhj/libcuda" }
 lazy_static = "*"
