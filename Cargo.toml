@@ -17,4 +17,3 @@ nvptxglue = { path = "../nvptxglue" }
 [dependencies]
 cuda-ffi-types = { git = "https://github.com/peterhj/cuda-ffi-types" }
 cuda = { git = "https://github.com/peterhj/libcuda" }
-lazy_static = "*"
